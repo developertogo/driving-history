@@ -4,9 +4,9 @@
 The objective of this project is to showcase my design and implementation of production quality code as a member of your development team.
 
 # Design Approach
-My primary goal is to design the backend in order to avoid the classic phenomemum of Fat Models and [God Classes](http://wiki.c2.com/?GodClass). 
+My primary goal is to design the backend to avoid the classic phenomemum of Fat Models and [God Classes](http://wiki.c2.com/?GodClass). 
 
-I architected the software with separation of concerns in mind, resulting in a clear tier architecture, and a linear data flow. The code base is structured as follows:
+Architected the software with separation of concerns in mind, resulting in a clear tier architecture, and a linear data flow. The code base is structured as follows:
 
 * _**models**_: contain data only. No business logic
 * _models/factory/**model_factory.rb**_: is the singleton model creator. Keeps data persistency
