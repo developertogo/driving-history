@@ -26,7 +26,7 @@ $ find spec -iname '*_spec.rb' | xargs wc -l | grep total$
     530 total
 ```
 #### Test Coverage
-There is _100%_ test coverage, see [coverage/index.html](https://github.com/developertogo/driving-history/blob/master/coverage/index.html) for more details:
+There is _100%_ test coverage, see [coverage/index.html](https://github.com/developertogo/driving-history/blob/master/coverage/index.html~) for more details:
 
 ![Test Coverage](https://github.com/developertogo/driving-history/blob/master/docs/test-coverage.png)
 
