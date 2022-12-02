@@ -1,9 +1,9 @@
 # Track Driving History with Ruby
 
-# Objective
+## Objective
 The objective of this project is to showcase my design and implementation of production quality code as a member of your development team.
 
-# Problem Statement
+## Problem Statement
 Let's write some code to track driving history for people.
 
 The code will process an input file. You can either choose to accept the input via stdin (e.g. if you're using Ruby cat input.txt | ruby yourcode.rb), or as a file name given on the command line (e.g. ruby yourcode.rb input.txt). You can use any programming language that you want. Please choose a language that allows you to best demonstrate your programming ability.
@@ -38,7 +38,7 @@ Dan: 39 miles @ 47 mph
 Kumi: 0 miles
 ```
 
-# Design Approach
+## Design Approach
 My primary goal is to design the backend to avoid the classic phenomemum of Fat Models and [God Classes](http://wiki.c2.com/?GodClass). 
 
 Architected the software with separation of concerns in mind, resulting in a clear tier architecture, and a linear data flow. The code base is structured as follows:
@@ -48,31 +48,32 @@ Architected the software with separation of concerns in mind, resulting in a cle
 * _**services**_: provide the business logic as procedural static methods
 * _**reports**_: provide the report generation as procedural static methods
 
-# Implementation
+## Implementation
 Below is a few stats of the code base.
-#### Application LOC
+
+### Application LOC
 ```
 $ find app -iname '*.rb' | xargs wc -l | grep total$
     206 total
 ```
-#### Testing LOC
+### Testing LOC
 ```
 $ find spec -iname '*_spec.rb' | xargs wc -l | grep total$
     530 total
 ```
-#### Test Coverage
+### Test Coverage
 There is _100%_ test coverage, see [coverage/index.html](https://github.com/developertogo/driving-history/blob/master/coverage/index.html~) for more details:
 
 ![Test Coverage](https://github.com/developertogo/driving-history/blob/master/docs/test-coverage.png)
 
-# Run Program
+## Run Program
 Run program as follows:
 ```
 ruby track_driving_history.rb input.txt
 ```
 **Note**: This code was tested with Ruby 2.4.5
 
-# Unit Tests
+## Unit Tests
 Run unit tests as follows:
 ```
 $ rspec
